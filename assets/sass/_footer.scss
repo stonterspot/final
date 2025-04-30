@@ -1,0 +1,77 @@
+//
+//
+//
+//
+//
+// INICIO DEL FOOTER
+footer {
+    background-color: #1f1f1f;
+    color: #ddd;
+    padding: 40px 20px 20px;
+    font-family: "Libre Franklin", sans-serif;
+    margin-top: 80px;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    gap: 2rem;
+  }
+  
+  .footer-logo img {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-logo p {
+    font-size: 14px;
+    color: #aaa;
+  }
+  
+  .footer-links h5,
+  .footer-contact h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #00bfff;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-links ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #00bfff;
+  }
+  
+  .footer-contact p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    font-size: 13px;
+    color: #666;
+  }
+//FIN DEL FOOTER
+//
+//
+//
+//

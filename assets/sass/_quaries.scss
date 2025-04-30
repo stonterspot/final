@@ -1,0 +1,406 @@
+
+@media screen and (max-width:769px) {
+// IMAGEN PRINCIPAL CON ANIMNACION
+    .contenedortexto {
+        height: 300px;
+    }
+    .contenedortexto p {
+        font-size: 14px;
+        margin-top: -30px;
+    }
+    .imggamers {
+        width: 300px;
+        height: 300px;
+    }
+    //FIN IMAGEN PRINCIPAL CON ANIMNACION
+    //
+    //
+    //
+    //MODIFICACION DE CARDS ENCONTRA LO QUE NECESITAS
+    .tarjetas {
+    gap: 10px 10px;
+    }
+    //FIN DE MOFICACION DE CARDS ENCONTRA LO QUE NECESITAS
+    //
+    //
+    //
+    //
+    //COMIENZO DE CONTENIDO MAS VENDIDO
+    .contenedormasvendido {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        padding-left: 50px;
+        row-gap: 20px;
+    }
+    //FIN DE CONTENIDO MAS VENDIDO
+    //
+    //
+    //
+    //MOFICACION DE TITLO JUEGO OFERTA DEL MES
+.cuartotituloh {
+    font-size: 20px;   
+}
+
+.juegooferta {
+    width: 100%;
+    height: 600px;  
+}
+.contenedorjuegooferta a {
+    bottom: 50px;
+    right: 210px;
+    width: 350px;
+    height: 50px;
+}
+
+.textojuego {
+    left: 85px;
+    top: 20px;
+}
+.textojuego h2 {
+    font-size: 22px;
+}
+.mature {
+    width: 500px;
+    height: 500px;
+    top: 700px;
+    right: 500px;
+
+}
+
+.infojuego {
+position: absolute;
+font-family: $letra;
+top: 700px;
+right: 10px;
+font-size: 2px;
+}
+//FIN JUEGO OFERTA DEL MES
+// 
+//
+//
+//
+//
+//
+////////////////////////////////
+/// ////////////////////////////
+/////////////////////////////////
+/// NOVEDADES
+/// INICIO PRIMER CARROUSEL
+.novedadesprimertitulo {
+    font-size: 40px;
+
+}
+
+.carrouseles img {
+    height: 400px;
+}
+//FIN PRIMER CARROUSEL 
+//
+//
+//
+//INICIO SEGUNDO CARROUSEL
+.novedadessegundotitulo {
+    font-size: 35px;
+
+}
+//////////////////FIN NOVEDADES/////////////////
+/// /////////////
+/// ///////////////
+/// ////////////
+/// /////////////
+/////////////////INICIO STOCK///////////////////
+/// 
+.botonera a {
+    font-size: 20px;
+    }
+    .contenedorstock {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding: 20px;
+      }
+    .propagandaamd img {
+        width: 750px;
+        margin-right: 47px;
+    }
+///////FIN STOCK///////////
+/// ///////////////////
+/// ///////////////////
+/// //////////////////////
+//////INICIO PERIFERICOS///////////////
+.contenedorperifericos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+.carrouselperiferico img{
+    width: 700px;
+    height: 200px;
+}
+///////FIN PERIFERICOS///////////
+/// ///////////////////
+/// ///////////////////
+/// //////////////////////
+//////INICIO COMPUTADORAS Y NOTEBOOKS///////////////
+.contenedorcomputadoras {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+.propagandacomputadora {
+    width: 600px;
+    height: 50px;
+}
+.propagandacomputadorados {
+    width: 600px;
+    height: 50px;
+}
+///////FIN COMPUTADORAS///////////
+/// ///////////////////
+/// ///////////////////
+/// //////////////////////
+//////INICIO CONSOLAS///////////////
+
+.contenedorconsolas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+///////FIN CONSOLAS///////////
+/// ///////////////////
+/// ///////////////////
+/// //////////////////////
+//////INICIO JUEGOSS///////////////
+.contenedorjuegos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:480px) {
+//COMIENZO ANIMACION PRICNIPAL
+    .contenedortexto {
+        height: 280px;
+        margin-top: -50px;
+        margin-left: -30px;
+    }
+    .contenedortexto p {
+        font-size: 8.5px;
+        text-align: center;
+        margin-top: -50px;
+    
+    }
+    .imggamers {
+        width: 200px;
+        height: 200px;
+    }
+//FIN ANIMACION PRINCIPAL
+//INICIO SEGUNDO TITULO
+    .segundotituloh {
+        font-size: 35px;
+        text-align: center;
+    }
+//FIN MODIFICACION SEGUNDO TITULO
+//
+//
+//
+//  
+//MODIFICACION DE CARDS
+.contenedormasvendido {
+display: flex;
+flex-direction: column;
+row-gap: 20px;
+}
+//FIN MODIFCACION DE LAS CARDS
+//
+//
+//
+//MOFICACION DE TITLO JUEGO OFERTA DEL MES
+
+.cuartotituloh {
+    font-size: 20px;   
+}
+
+.juegooferta {
+    width: 100%;
+    height: 300px;  
+}
+.contenedorjuegooferta a {
+    bottom: 50px;
+    right: 25px;
+    width: 350px;
+    height: 50px;
+}
+
+.textojuego {
+    left: 0px;
+    top: 0px;
+}
+.textojuego h2 {
+    font-size: 19px;
+}
+.mature {
+    width: 500px;
+    height: 500px;
+    top: 700px;
+    right: 500px;
+
+}
+.infojuego {
+position: absolute;
+font-family: $letra;
+top: 700px;
+right: 10px;
+font-size: 2px;
+
+}
+////////////////////FIN INDEX
+/// 
+/// 
+/// 
+/// COMIENZO NOVEDADES
+/// PRIMER CARROUSEL
+/// 
+.novedadesprimertitulo {
+    font-size: 35px;
+
+}
+.carrouseles img {
+    height: 300px;
+}
+//FIN PRIMER CARROUSEL///
+//
+//
+//
+//
+// INICIO SEGUNDO CARROUSEL
+.novedadessegundotitulo {
+    font-size: 35px;
+
+}
+//////////////////FIN NOVEDADES/////////////////
+/// /////////////
+/// ///////////////
+/// ////////////
+/// /////////////
+/////////////////INICIO STOCK///////////////////
+.botonera a {
+    font-size: 12px;
+    }
+    .contenedorstock {
+    display: flex;
+    flex-direction: column;
+    }
+    .propagandaamd img {
+        height: 200px;
+        width: 350px;
+        margin-left: -25px;
+    }
+
+
+///////FIN STOCK///////////
+/// ///////////////////
+/// ///////////////////
+/// //////////////////////
+//////INICIO PERIFERICOS///////////////
+
+.contenedorperifericos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+.carrouselperiferico img{
+    width: 400px;
+    height: 160px;
+}
+///////FIN PERIFERICOS///////////
+/// ///////////////////
+/// ///////////////////
+/// //////////////////////
+//////INICIO COMPUTADORAS Y NOTEBOOKS///////////////
+.contenedorcomputadoras {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+.propagandacomputadora {
+    width: 360px;
+    height: 50px;
+}
+.propagandacomputadorados {
+    width: 360px;
+    height: 50px;
+}
+///////FIN COMPUTADORAS///////////
+/// ///////////////////
+/// ///////////////////
+/// //////////////////////
+//////INICIO COMPUTADORAS Y NOTEBOOKS///////////////
+
+.contenedorconsolas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+///////FIN CONSOLAS///////////
+/// ///////////////////
+/// ///////////////////
+/// //////////////////////
+//////INICIO JUEGOSS///////////////
+.contenedorjuegos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+  
+
+}
+/////ANIMACION PRICIPAL ADAPTADA PARA IPHONE
+@media screen and (max-width:426px) {
+    //COMIENZO ANIMACION PRICNIPAL
+        .contenedortexto {
+            height: 190px;
+            margin-top: -50px;
+            margin-left: -30px;
+        }
+        .contenedortexto p {
+            font-size: 8.5px;
+            text-align: center;
+            margin-top: -50px;
+        
+        }
+        .imggamers {
+            width: 200px;
+            height: 200px;
+        }
+    }

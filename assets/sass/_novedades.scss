@@ -1,0 +1,29 @@
+// COMIENZO PRIMER CARROUSEL
+.contenedorcarrouseluno img {
+    height: 600px;
+}
+
+.contenedorprimertitulo{
+    @extend .contenedortitulotres;  
+
+}
+.novedadesprimertitulo {
+    @extend .titulotres; 
+    
+
+}
+// FIN PRIMER CARROUSEL
+//
+//
+//
+//
+//INICIO SEGUNDO CARROUSEL
+.contenedorsegundotitulo {
+    @extend .contenedortitulotres;
+}
+
+
+.novedadessegundotitulo {
+    @extend .titulotres;
+}
+

@@ -1,0 +1,820 @@
+.body {
+  -webkit-animation: color-change-2x 3s linear infinite alternate both;
+  animation: color-change-2x 3s linear infinite alternate both;
+}
+
+@keyframes color-change-2x {
+  0% {
+    background: #8af7ff;
+  }
+  100% {
+    background: #d07eff;
+  }
+}
+@-webkit-keyframes bg-pan-left {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes bg-pan-left {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.contenedorbuscador {
+  padding-left: 570px;
+}
+
+.navbar-nav {
+  gap: 2rem;
+}
+
+.btn {
+  --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
+  --border-width: 0.125em;
+  --curve-size: 0.5em;
+  --blur: 30px;
+  --bg: #080312;
+  --color: #afffff;
+  color: var(--color);
+  cursor: pointer;
+  position: relative;
+  isolation: isolate;
+  display: inline-grid;
+  place-content: center;
+  padding: 0.5em 1.5em;
+  font-size: 17px;
+  border: 0;
+  text-transform: uppercase;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+  clip-path: polygon(0% var(--curve-size), var(--curve-size) 0, 100% 0, 100% calc(100% - var(--curve-size)), calc(100% - var(--curve-size)) 100%, 0 100%);
+  transition: color 250ms;
+}
+
+.btn::after,
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.btn::before {
+  background: var(--border-color);
+  background-size: 300% 300%;
+  animation: move-bg7234 5s ease infinite;
+  z-index: -2;
+}
+
+@keyframes move-bg7234 {
+  0% {
+    background-position: 31% 0%;
+  }
+  50% {
+    background-position: 70% 100%;
+  }
+  100% {
+    background-position: 31% 0%;
+  }
+}
+.btn::after {
+  background: var(--bg);
+  z-index: -1;
+  clip-path: polygon(var(--border-width) calc(var(--curve-size) + var(--border-width) * 0.5), calc(var(--curve-size) + var(--border-width) * 0.5) var(--border-width), calc(100% - var(--border-width)) var(--border-width), calc(100% - var(--border-width)) calc(100% - (var(--curve-size) + var(--border-width) * 0.5)), calc(100% - (var(--curve-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)), var(--border-width) calc(100% - var(--border-width)));
+  transition: clip-path 500ms;
+}
+
+.btn:where(:hover, :focus)::after {
+  clip-path: polygon(calc(100% - var(--border-width)) calc(100% - (var(--curve-size) + var(--border-width) * 0.5)), calc(100% - var(--border-width)) var(--border-width), calc(100% - var(--border-width)) var(--border-width), calc(100% - var(--border-width)) calc(100% - (var(--curve-size) + var(--border-width) * 0.5)), calc(100% - (var(--curve-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)), calc(100% - (var(--curve-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)));
+  transition: 200ms;
+}
+
+.btn:where(:hover, :focus) {
+  color: #fff;
+}
+
+.contenedorbuscador {
+  padding-left: 570px;
+}
+
+.imggamers {
+  height: 600px;
+  width: 600px;
+  animation: gamers 3s ease-in infinite alternate-reverse;
+  align-self: start;
+}
+
+@keyframes gamers {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-60px);
+  }
+}
+.animacionprincipal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 100px;
+  padding-left: 40px;
+}
+
+.contenedorlan {
+  grid-column: 2/3;
+}
+
+.contenedortexto {
+  font-size: 25px;
+  grid-column: 1/2;
+  padding: 1.5rem 2rem;
+  height: 450px;
+  padding-left: 20px;
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  white-space: pre-line;
+  background-color: rgb(43, 47, 53);
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(149, 149, 149, 0.2);
+  color: white;
+  animation: aparecer 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes aparecer {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.contenedortitulo, .contenedortitulotres, .contenedorsegundotitulo, .contenedorprimertitulo, .contenedorcuartotitulo {
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.segundotituloh, .titulotres, .novedadessegundotitulo, .novedadesprimertitulo, .cuartotituloh {
+  font-size: 50px;
+  font-family: "Libre Franklin", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 60px;
+  gap: 5px 5px;
+}
+
+.card {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  transition: 0.3s ease-in-out;
+}
+
+.card-body {
+  background-color: rgb(43, 47, 53);
+}
+
+.card-title {
+  font-size: "Libre Franklin", sans-serif;
+  color: white;
+}
+
+.card-body h5 {
+  color: white;
+}
+
+.card-body p {
+  color: white;
+}
+
+.card-body a {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedormasvendido {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-left: 50px;
+  row-gap: 20px;
+}
+
+.fuego {
+  animation: flame 0.8s infinite alternate ease-in-out;
+  display: inline-block;
+}
+
+@keyframes flame {
+  0% {
+    transform: translateY(0) scale(1);
+    filter: drop-shadow(0 0 5px orange);
+  }
+  100% {
+    transform: translateY(-5px) scale(1.1);
+    filter: drop-shadow(0 0 15px red);
+  }
+}
+.juegooferta {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.contenedorjuegooferta {
+  position: relative;
+  display: inline-block;
+}
+
+.botonoferta {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedorjuegooferta a {
+  position: absolute;
+  bottom: 20px;
+  right: 590px;
+  width: 350px;
+  height: 50px;
+  display: flex;
+}
+
+.textojuego {
+  position: absolute;
+  left: 310px;
+  top: 50px;
+  color: white;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.mature {
+  position: absolute;
+  width: 50px;
+  height: 70px;
+  top: 700px;
+  right: 500px;
+}
+
+.infojuego {
+  position: absolute;
+  font-family: "Libre Franklin", sans-serif;
+  top: 725px;
+  right: 30px;
+  font-size: 18px;
+  color: white;
+}
+
+footer {
+  background-color: #1f1f1f;
+  color: #ddd;
+  padding: 40px 20px 20px;
+  font-family: "Libre Franklin", sans-serif;
+  margin-top: 80px;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 2rem;
+}
+
+.footer-logo img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.footer-links h5,
+.footer-contact h5 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #00bfff;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #00bfff;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  font-size: 13px;
+  color: #666;
+}
+
+.contenedorcarrouseluno img {
+  height: 600px;
+}
+
+.botonera {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 40px;
+}
+
+.botonera a {
+  text-decoration: none;
+  font-size: 27px;
+  color: black;
+  font-family: "Libre Franklin", sans-serif;
+  text-decoration: none;
+  color: #343434;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.botonera a:hover {
+  color: #0056b3;
+  border-bottom: 2px solid #0056b3;
+}
+
+.contenedorstock {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin-left: 50px;
+  grid-auto-rows: 450px;
+  gap: 20px;
+  border-radius: 5px;
+  box-shadow: 2px;
+}
+
+.ram {
+  grid-column: 1/2;
+  grid-row: 6/7;
+}
+
+.propagandaamd {
+  grid-row: 6/7;
+  grid-column: 2/4;
+}
+
+.propagandaamd img {
+  width: 1050px;
+  height: 450px;
+  border-radius: 20px;
+}
+
+.card {
+  width: 18rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  height: 300px;
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body .btn {
+  margin-top: auto;
+  align-self: flex-start;
+  width: 100%;
+}
+
+.contenedorperifericos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row: 1fr 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.contenedorperifericos article div {
+  width: 100%;
+  height: 100%;
+}
+
+.carrouselperiferico {
+  grid-column: 1/5;
+  grid-row: 2/3;
+  height: 300px;
+}
+
+.palancalogitech {
+  grid-row: 5/6;
+  grid-column: 3/4;
+}
+
+.mouseblue {
+  grid-row: 5/6;
+  grid-column: 2/3;
+}
+
+.contenedorcomputadoras {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row: 1fr 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  padding-left: 90px;
+}
+
+.propagandacomputadora {
+  grid-column: 1/4;
+  grid-row: 2/3;
+  width: 1289px;
+}
+
+.propagandacomputadorados {
+  grid-column: 1/4;
+  grid-row: 5/6;
+  width: 1289px;
+}
+
+.noxi {
+  grid: 4/5;
+  grid-column: 2/3;
+}
+
+.contenedorjuegos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.contenedorjuegos article div {
+  width: 100%;
+  height: 100%;
+}
+
+.contenedorconsolas {
+  display: flex;
+  justify-content: space-around;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.formulario {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+}
+
+.formulario h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: #f9f9f9;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+input[type=submit] {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+@media screen and (max-width: 769px) {
+  .contenedortexto {
+    height: 300px;
+  }
+  .contenedortexto p {
+    font-size: 14px;
+    margin-top: -30px;
+  }
+  .imggamers {
+    width: 300px;
+    height: 300px;
+  }
+  .tarjetas {
+    gap: 10px 10px;
+  }
+  .contenedormasvendido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding-left: 50px;
+    row-gap: 20px;
+  }
+  .cuartotituloh {
+    font-size: 20px;
+  }
+  .juegooferta {
+    width: 100%;
+    height: 600px;
+  }
+  .contenedorjuegooferta a {
+    bottom: 50px;
+    right: 210px;
+    width: 350px;
+    height: 50px;
+  }
+  .textojuego {
+    left: 85px;
+    top: 20px;
+  }
+  .textojuego h2 {
+    font-size: 22px;
+  }
+  .mature {
+    width: 500px;
+    height: 500px;
+    top: 700px;
+    right: 500px;
+  }
+  .infojuego {
+    position: absolute;
+    font-family: "Libre Franklin", sans-serif;
+    top: 700px;
+    right: 10px;
+    font-size: 2px;
+  }
+  .novedadesprimertitulo {
+    font-size: 40px;
+  }
+  .carrouseles img {
+    height: 400px;
+  }
+  .novedadessegundotitulo {
+    font-size: 35px;
+  }
+  .botonera a {
+    font-size: 20px;
+  }
+  .contenedorstock {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  .propagandaamd img {
+    width: 750px;
+    margin-right: 47px;
+  }
+  .contenedorperifericos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  .carrouselperiferico img {
+    width: 700px;
+    height: 200px;
+  }
+  .contenedorcomputadoras {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  .propagandacomputadora {
+    width: 600px;
+    height: 50px;
+  }
+  .propagandacomputadorados {
+    width: 600px;
+    height: 50px;
+  }
+  .contenedorconsolas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  .contenedorjuegos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contenedortexto {
+    height: 280px;
+    margin-top: -50px;
+    margin-left: -30px;
+  }
+  .contenedortexto p {
+    font-size: 8.5px;
+    text-align: center;
+    margin-top: -50px;
+  }
+  .imggamers {
+    width: 200px;
+    height: 200px;
+  }
+  .segundotituloh, .titulotres, .cuartotituloh, .novedadesprimertitulo, .novedadessegundotitulo {
+    font-size: 35px;
+    text-align: center;
+  }
+  .contenedormasvendido {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .cuartotituloh {
+    font-size: 20px;
+  }
+  .juegooferta {
+    width: 100%;
+    height: 300px;
+  }
+  .contenedorjuegooferta a {
+    bottom: 50px;
+    right: 25px;
+    width: 350px;
+    height: 50px;
+  }
+  .textojuego {
+    left: 0px;
+    top: 0px;
+  }
+  .textojuego h2 {
+    font-size: 19px;
+  }
+  .mature {
+    width: 500px;
+    height: 500px;
+    top: 700px;
+    right: 500px;
+  }
+  .infojuego {
+    position: absolute;
+    font-family: "Libre Franklin", sans-serif;
+    top: 700px;
+    right: 10px;
+    font-size: 2px;
+  }
+  .novedadesprimertitulo {
+    font-size: 35px;
+  }
+  .carrouseles img {
+    height: 300px;
+  }
+  .novedadessegundotitulo {
+    font-size: 35px;
+  }
+  .botonera a {
+    font-size: 12px;
+  }
+  .contenedorstock {
+    display: flex;
+    flex-direction: column;
+  }
+  .propagandaamd img {
+    height: 200px;
+    width: 350px;
+    margin-left: -25px;
+  }
+  .contenedorperifericos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  .carrouselperiferico img {
+    width: 400px;
+    height: 160px;
+  }
+  .contenedorcomputadoras {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  .propagandacomputadora {
+    width: 360px;
+    height: 50px;
+  }
+  .propagandacomputadorados {
+    width: 360px;
+    height: 50px;
+  }
+  .contenedorconsolas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  .contenedorjuegos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .contenedortexto {
+    height: 190px;
+    margin-top: -50px;
+    margin-left: -30px;
+  }
+  .contenedortexto p {
+    font-size: 8.5px;
+    text-align: center;
+    margin-top: -50px;
+  }
+  .imggamers {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+
+/*# sourceMappingURL=estilos.css.map */

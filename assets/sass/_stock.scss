@@ -1,0 +1,201 @@
+//
+//
+//
+// NAV DE PRODUCTOS
+.botonera{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 40px;
+    
+}
+.botonera a {
+    text-decoration: none;
+    font-size: 27px;
+    color: black;
+    font-family: $letra;
+    text-decoration: none;
+    color: #343434;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.botonera a:hover {
+  color: #0056b3;
+  border-bottom: 2px solid #0056b3;
+}
+// FIN NAV DE PRODUCTOS
+//
+//
+//
+//
+//
+//GRID APLICADO A OFERTAS EN STOCK
+.contenedorstock {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-left: 50px;
+
+    grid-auto-rows: 450px;
+    gap: 20px;
+    border-radius: 5px;
+    box-shadow: 2px;
+}
+
+.ram {
+
+    grid-column: 1/2 ;
+    grid-row: 6/7 ;
+}
+.propagandaamd{
+    grid-row: 6/7;
+    grid-column: 2/4;
+}
+.propagandaamd img {
+    width: 1050px;
+    height: 450px;
+    border-radius: 20px;
+}
+
+//FIN DE GRID EN STOCK
+//
+//
+
+//
+// // ESTA CONFIGURACION DEJA LOS ELEMENTOS <a> DEL CARD AL FONDO
+.card {
+    width: 18rem;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+  }
+.card img{
+    height: 300px;
+}
+  .card-body {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-body .btn {
+    margin-top: auto; 
+    align-self: flex-start; 
+    width: 100%; 
+  }
+// // ESTA CONFIGURACION DEJA LOS ELEMENTOS <a> DEL CARD AL FONDO FIN
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//INICIO PERIFERICOS 
+//GRID
+.contenedorperifericos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: 1fr 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    }
+    
+    
+    .contenedorperifericos article div {
+    
+    width: 100%;
+    height: 100%;
+    }
+
+    .carrouselperiferico {
+        grid-column: 1/5;
+        grid-row: 2/3;
+        height: 300px;
+
+    }
+    .palancalogitech {
+        grid-row: 5/6;
+        grid-column: 3/4;
+    }
+    .mouseblue {
+        grid-row: 5/6;
+        grid-column: 2/3;
+    }
+
+//FIN DEL GRID APLICADO A PERIFERICOS Y PUBLICIDADES 
+//
+//
+//
+//
+//
+//
+//INICIO COMPUTADORAS
+//GRID COMPUTADORAS
+.contenedorcomputadoras {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 1fr 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    padding-left: 90px;
+    
+}
+.propagandacomputadora {
+grid-column: 1/4;
+grid-row: 2/3;
+width: 1289px;
+}
+
+.propagandacomputadorados {
+grid-column: 1/4;
+grid-row: 5/6;
+width: 1289px;
+}
+
+.noxi {
+    grid: 4/5;
+    grid-column: 2/3;
+}
+//FIN GRID COMPUTADORAS
+//FIN COMPUTADORAS//
+//
+//
+//
+
+//
+//
+//INICIO JUEGOS
+//GRID JUEGOS
+.contenedorjuegos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: 1fr 1fr 1fr;
+    gap: 20px;
+    }
+    
+    
+.contenedorjuegos article div {
+    
+        width: 100%;
+        height: 100%;
+        }
+      
+///FIN GRID APLICADO A JUEGOS
+///
+//FIN JUEGOS
+///
+///
+/// 
+/// 
+/// 
+/// COMIENZO CONSOLAS
+.contenedorconsolas{
+display: flex;
+justify-content: space-around;
+
+}
+
